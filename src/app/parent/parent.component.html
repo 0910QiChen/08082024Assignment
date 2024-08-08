@@ -1,0 +1,6 @@
+<div style="border: 5px solid orange;">
+    <h3>Parent Component</h3>
+    <p>Received from Child: {{ childData }}</p>
+    Send to child: <input type="text" [(ngModel)]="parentData"/>
+    <app-child [parentData]="updateData(parentData)" (childEvent)="receiveData($event)"></app-child>
+</div>

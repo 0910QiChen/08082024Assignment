@@ -1,0 +1,5 @@
+<div style="border: 5px solid green; margin: 20px;">
+    <h3>Child Component</h3>
+    <p>Received from Parent: {{ parentData }}</p>
+    Send to parent: <input type="text" [(ngModel)]="childData" (ngModelChange)="updateData(childData)"/>
+</div>
