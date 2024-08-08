@@ -1,27 +1,19 @@
 # 08082024Assignment
+3. Write down some use cases for all life-cycle hooks.
+  1)	`ngOnChanges`: respond to changes in `@Input` properties from a parent component, for instance, display value change when an @Input property changes.
+  2)	`ngOnInit`: initialize data or fetch data from a database when the component is created, for instance, fetching user data from an API and assigning it to a component property.
+  3)	`ngDoCheck`: implement custom change detection logic besides Angular’s default change detection, for instance, tracking changes in complex objects or arrays.
+  4)	`ngAfterContentInit`: perform actions after content has been projected into the component, for instance, validating content projected from a parent component.
+  5)	`ngAfterContentChecked`: respond after Angular checks the content projection for changes, for instance, adjusting layout or styles after projected content changes.
+  6)	`ngAfterViewInit`: perform actions after the component’s view and its child views have been initialized, for instance, initializing a third-party library that requires access to the DOM elements.
+  7)	`ngAfterViewChecked`: respond after Angular checks the component’s views for changes, for instance, triggering a re-render or updating the UI after a data-bound property changes.
+  8)	`ngOnDestroy`: clean up resources or unsubscribe from observables when the component is destroyed, for instance, clearing intervals.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.14.
+4. What is the difference between ViewChild vs ViewChildren?
+- `@ViewChild` is used when we need to obtain a reference to a single child component within the same view. While `@ViewChildren` is used when we need to query and access multiple child components within the view.
 
-## Development server
+5. What is the difference between ContentChild vs ContentChildren?
+- `ContentChild` is used to get a reference to a single element that has been projected from the parent component into the child component’s `ng-content`. On the other hand, `ContentChildren` is used to query and obtain a collection of elements that have been projected from the parent component into the child component’s `ng-content`.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+6. What is dependency injection design pattern? What are the benefits?
+- Dependency injection design pattern is a design pattern that used to implement Inversion of Control in software development, instead of a class creating its own dependencies, DI allows those dependencies to be injected from the outside by a framework or container. The benefits of using Dependency Injection are loose coupling, which means that classes are less dependent on the specific implementations of their dependencies; enhance testability by allowing dependencies to be easily mocked during unit testing; improves code reusability by allowing different parts of an application to share common dependencies without recreating them.
