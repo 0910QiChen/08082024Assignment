@@ -1,13 +1,13 @@
 # 08082024Assignment
 3. Write down some use cases for all life-cycle hooks.
-  1)	`ngOnChanges`: respond to changes in `@Input` properties from a parent component, for instance, display value change when an @Input property changes.
-  2)	`ngOnInit`: initialize data or fetch data from a database when the component is created, for instance, fetching user data from an API and assigning it to a component property.
-  3)	`ngDoCheck`: implement custom change detection logic besides Angular’s default change detection, for instance, tracking changes in complex objects or arrays.
-  4)	`ngAfterContentInit`: perform actions after content has been projected into the component, for instance, validating content projected from a parent component.
-  5)	`ngAfterContentChecked`: respond after Angular checks the content projection for changes, for instance, adjusting layout or styles after projected content changes.
-  6)	`ngAfterViewInit`: perform actions after the component’s view and its child views have been initialized, for instance, initializing a third-party library that requires access to the DOM elements.
-  7)	`ngAfterViewChecked`: respond after Angular checks the component’s views for changes, for instance, triggering a re-render or updating the UI after a data-bound property changes.
-  8)	`ngOnDestroy`: clean up resources or unsubscribe from observables when the component is destroyed, for instance, clearing intervals.
+  - `ngOnChanges`: respond to changes in `@Input` properties from a parent component, for instance, display value change when an @Input property changes.
+  - `ngOnInit`: initialize data or fetch data from a database when the component is created, for instance, fetching user data from an API and assigning it to a component property.
+  - `ngDoCheck`: implement custom change detection logic besides Angular’s default change detection, for instance, tracking changes in complex objects or arrays.
+  - `ngAfterContentInit`: perform actions after content has been projected into the component, for instance, validating content projected from a parent component.
+  - `ngAfterContentChecked`: respond after Angular checks the content projection for changes, for instance, adjusting layout or styles after projected content changes.
+  - `ngAfterViewInit`: perform actions after the component’s view and its child views have been initialized, for instance, initializing a third-party library that requires access to the DOM elements.
+  - `ngAfterViewChecked`: respond after Angular checks the component’s views for changes, for instance, triggering a re-render or updating the UI after a data-bound property changes.
+  - `ngOnDestroy`: clean up resources or unsubscribe from observables when the component is destroyed, for instance, clearing intervals.
 
 4. What is the difference between ViewChild vs ViewChildren?
 - `@ViewChild` is used when we need to obtain a reference to a single child component within the same view. While `@ViewChildren` is used when we need to query and access multiple child components within the view.
